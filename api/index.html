@@ -121,7 +121,6 @@
     style="display:inline-block;padding-top:8px">
     <img src="/images/strikingly.png">
   </a>
-  
 </div>
 
     <h1></h1>
@@ -894,7 +893,7 @@
 <p>如果 keypath 不存在，将递归地创建并建立追踪。如果用它创建一个顶级属性，实例将被强制进入“ digest 循环”，在此过程中重新计算所有的 watcher。</p>
 </li>
 <li><p><strong>示例：</strong></p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">  data: &#123;</span><br><span class="line">    a: &#123;</span><br><span class="line">      b: <span class="number">1</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">// keypath 存在</span></span><br><span class="line">vm.$set(<span class="string">'a.b'</span>, <span class="number">2</span>)</span><br><span class="line">vm.a.b <span class="comment">// -&gt; 2</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// keypath 不存在</span></span><br><span class="line">vm.$set(<span class="string">'c'</span>, <span class="number">3</span>)</span><br><span class="line">vm.c <span class="comment">// -&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">  data: &#123;</span><br><span class="line">    a: &#123;</span><br><span class="line">      b: <span class="number">1</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">// keypath 存在</span></span><br><span class="line">vm.$set(<span class="string">'a.b'</span>, <span class="number">2</span>)</span><br><span class="line">vm.a.b <span class="comment">// -&gt; 2</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// keypath 不存在</span></span><br><span class="line">vm.$set(<span class="string">'c'</span>, <span class="number">3</span>)</span><br><span class="line">vm.c <span class="comment">// -&gt; 3</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p><strong>另见：</strong> <a href="/guide/reactivity.html">深入响应式原理</a></p>
 </li>
