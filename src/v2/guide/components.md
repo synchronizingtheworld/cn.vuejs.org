@@ -558,7 +558,10 @@ new Vue({
 一个非常简单的货币输入：
 
 ``` html
-<currency-input v-model="price"></currency-input>
+<div id="currency-input-example">
+  <currency-input v-model="price"></currency-input>
+  <p>{{ price }}</p>
+</div>
 ```
 
 ``` js
@@ -591,6 +594,12 @@ Vue.component('currency-input', {
     }
   }
 })
+new Vue({
+  el: '#currency-input-example',
+  data: {
+    price: 0
+  }
+});
 ```
 
 {% raw %}
